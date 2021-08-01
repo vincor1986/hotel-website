@@ -304,7 +304,7 @@ body {
     url(img/about-us-background.jfif);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 9%;
+  background-position: fixed;
 }
 
 .enclosed-logo {
