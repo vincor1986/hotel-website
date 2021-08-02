@@ -45,10 +45,9 @@ const a = document.querySelector(".header-background-img");
   $(window)
     .unbind("scroll")
     .scroll(function () {
-      if (window.scrollY < 1) {
-        return (a.style.top = `${+window.scrollY}px`);
-      } else {
-        return (a.style.top = `-${window.scrollY / 1.5}px`);
-      }
+      a.style.top = `-${window.scrollY / 1.5}px`;
+      a.style.width = "100vw";
+      a.style.height = "70%";
+      a.style.backgroundSize = "cover";
     });
 })();
