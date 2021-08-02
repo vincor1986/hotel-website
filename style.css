@@ -439,10 +439,10 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.4);
-  border-radius: 0.4rem;
-  border: 0.2rem solid rgb(68, 90, 117);
-  transition: all 0.5s;
+  /* box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.4); */
+  border-radius: 1rem;
+  /* border: 0.4rem solid rgb(230, 190, 116); */
+  transition: all 0.75s;
   box-sizing: border-box;
   object-fit: cover;
 }
