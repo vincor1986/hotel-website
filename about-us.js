@@ -21,8 +21,9 @@ const getElement = (str) => {
 
 infoSelectBtns.forEach((el) => {
   el.addEventListener("click", (e) => {
+    let y = window.scrollY;
     showContent(e.target);
-    e.preventDefault();
+    window.scrollTo(0, y);
   });
 });
 
@@ -36,19 +37,14 @@ const showContent = (el) => {
   });
   el.disabled = true;
   el.style.zIndex = "50";
-  return false;
 };
 
 const a = document.querySelector(".header-background-img");
 
-// (function () {
-//   $(window)
-//     .unbind("scroll")
-//     .scroll(function () {
-//     if (window.scrollY > 100) {
-//       a.style.top = `-${window.scrollY / 1.5}px`;
-//       a.style.width = "100vw";
-//       a.style.height = "70%";
-//       a.style.backgroundSize = "cover";
-//     }});
-// })();
+(function () {
+  $(window)
+    .unbind("scroll")
+    .scroll(function () {
+      a.style.top = `-${window.scrollY / 1.5}px`;
+    });
+})();
