@@ -304,6 +304,9 @@ body {
     url(img/about-us-background.jfif);
   background-repeat: no-repeat;
   background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
   background-position: 9%;
 }
 
