@@ -759,12 +759,6 @@ option:active {
   }
 }
 
-@media screen and (max-width: 1000px) {
-  .header-background-img {
-    height: 80vh;
-  }
-}
-
 @media screen and (max-width: 750px) {
   .header-logo-img {
     min-width: 16rem;
