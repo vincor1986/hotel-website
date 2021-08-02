@@ -848,6 +848,10 @@ option:active {
   .header-logo-img {
     display: none;
   }
+  
+  .header-content {
+    top: 0rem;
+  }
 
   .enclosed-logo {
     display: block;
