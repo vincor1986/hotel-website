@@ -278,9 +278,9 @@ body {
 .header-container {
   justify-self: stretch;
   width: 56%;
-  background: url(img/events-wedding-arch.jfif);
+  background: url(img/events-hall.jfif);
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -349,8 +349,8 @@ body {
 
 .enquiries-form-container {
   width: 44%;
-  background: linear-gradient(to top, rgb(30, 43, 63), rgb(42, 55, 78));
-  padding: 2rem 4rem 2rem 2rem;
+  background-color: rgb(247, 236, 231);
+  padding: 4rem 6rem 4rem 4rem;
   display: flex;
   align-items: center;
   justify-items: center;
