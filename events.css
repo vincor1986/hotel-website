@@ -349,7 +349,7 @@ body {
 
 .enquiries-form-container {
   width: 30%;
-  background-color: rgb(247, 236, 231);
+  background: linear-gradient(to top, rgb(255, 243, 231), rgb(251, 253, 235));
   padding: 2rem 4rem 2rem 2rem;
   display: flex;
   align-items: center;
@@ -615,7 +615,7 @@ body {
 
 @media (max-width: 500px) {
   .navigation {
-    width: 60%;
+    width: 75%;
   }
 
   .navigation-search-input {
