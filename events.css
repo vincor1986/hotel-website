@@ -350,7 +350,7 @@ body {
 .enquiries-form-container {
   width: 44%;
   background-color: rgb(247, 236, 231);
-  padding: 4rem 6rem 4rem 4rem;
+  padding: 4rem 4rem 4rem 2rem;
   display: flex;
   align-items: center;
   justify-items: center;
