@@ -897,7 +897,7 @@ body {
 
 @media (max-width: 500px) {
   .navigation {
-    width: 60%;
+    width: 75%;
   }
 
   .navigation-search-input {
