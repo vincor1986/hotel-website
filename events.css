@@ -4,7 +4,6 @@ html {
   overflow-x: hidden;
 }
 
-
 body {
   margin: 0;
   padding: 0;
@@ -355,6 +354,7 @@ body {
   display: flex;
   align-items: center;
   justify-items: center;
+  box-shadow: 0 0 6.5rem rgba(0, 0, 0, 0.7);
 }
 
 .whole-form-wrapper {
