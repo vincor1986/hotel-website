@@ -832,7 +832,7 @@ option:active {
 
 @media (max-width: 500px) {
   .navigation {
-    width: 70%;
+    width: 75%;
   }
 
   .navigation-search-input {
