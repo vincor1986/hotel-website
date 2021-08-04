@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="img/logo/logo_large.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="suites.css" />
+    <title>Book Now - L'Hôtel du Luxe</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="navbar">
+      <input type="checkbox" class="checkbox" id="click" hidden />
+      <!-- sidebar -->
+      <div class="sidebar">
+        <label for="click">
+          <div class="menu-icon">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div></div
+        ></label>
+
+        <ul class="social-icons-list">
+          <li>
+            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#" class="social-link"
+              ><i class="fab fa-google-plus-g"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          </li>
+        </ul>
+
+        <div class="year"><p>2021</p></div>
+      </div>
+      <!-- end of sidebar -->
+      <!-- nav  -->
+      <nav class="navigation">
+        <div class="navigation-header">
+          <img class="heading-leaf" src="img/logo/logo_leaf.png" alt="" />
+          <h1 class="navigation-heading">L'Hôtel du Luxe</h1>
+          <form class="navigation-search">
+            <input
+              type="text"
+              class="navigation-search-input"
+              placeholder="Search..."
+            />
+            <button class="navigation-search-btn">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+
+        <ul class="navigation-list">
+          <li id="a"  class="navigation-item">
+            <ahref="#" class="navigation-link">home</a>
+          </li>
+          <li id="b" class="navigation-item">
+            <a href="#" class="navigation-link">about us</a>
+          </li>
+          <li id="c" class="navigation-item">
+            <a href="#" class="navigation-link">suites</a>
+          </li>
+          <li id="d" class="navigation-item">
+            <a href="#" class="navigation-link">events</a>
+          </li>
+          <li id="e" class="navigation-item">
+            <a href="#" class="navigation-link">customers</a>
+          </li>
+          <li id="f" class="navigation-item">
+            <a href="#" class="navigation-link">contact</a>
+          </li>
+        </ul>
+
+        <div class="copyright">
+          <p>&copy; 2021 L'Hôtel du Luxe. All Rights Reserved.</p>
+        </div>
+      </nav>
+      <!-- end of nav -->
+    </div>
+    <!-- end of navbar -->
+
+    <div class="page-container">
+        <div class="date-select-container">
+            <div class="date-select-heading">Select your dates...</div>
+            <div class="info-section-container">
+                <div class="guest-info-wrapper info-section-heading">
+                    <i class="fas fa-user-friends info-section-icon"></i>
+                    <div class="guest-info">
+                        <div class="guest-info-title info-title"><label for="guest-select-dropdown-checkbox">Guests <i class="fas fa-caret-down"></i></label></div>
+                        <div class="guest-info-details info-details">2 Adults, 0 Children</div>
+                    </div>
+                </div>
+                <div class="check-in-wrapper info-section-heading">
+                    <i class="fas fa-calendar-alt info-section-icon"></i>
+                    <div class="check-in-info">
+                        <div class="check-in-title info-title">Check-in</div>
+                        <div class="check-in-details info-details">Please select...</div>
+                    </div>
+                </div>
+                <div class="check-out-wrapper info-section-heading">
+                    <i class="fas fa-calendar-alt info-section-icon"></i>
+                    <div class="check-out-info">
+                        <div class="check-out-title info-title">Check-out</div>
+                        <div class="check-out-details info-details">Please select...</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row2-container">
+                <input type="checkbox" class="guest-select-dropdown-checkbox"id="guest-select-dropdown-checkbox" name="guest-select-dropdown-checkbox" hidden>
+                <div class="guest-select-dropdown">
+                    <div class="guest-select-heading"><i class="fas fa-times guest-select-close"></i><p class="">Select Guests</p></div>
+                    <div class="guest-select-input-section">
+                    <div class="guest-select-adult-section">
+                        <p class="guest-select-info-title">Adults</p>
+                        <div class="guest-select-control a-minus"><p>-</p></div>
+                        <input type="text" class="guest-select-input-display adult-count" value="2">
+                        <div class="guest-select-control a-plus"><p>+</p></div>
+                    </div>
+                    <div class="guest-select-children-section">
+                        <p class="guest-select-info-title">Children</p>
+                        <div class="guest-select-control c-minus"><p>-</p></div>
+                        <input type="text" class="guest-select-input-display child-count" value="0">
+                        <div class="guest-select-control c-plus"><p>+</p></div>
+                    </div></div>
+                    <div class="guest-select-btn-section">
+                    <button class="guest-select-cancel-btn cancel-btn">Cancel</button>
+                    <button class="guest-select-apply-btn apply-btn">Apply</button></div>
+                </div>
+                <div class="discount-box">
+                    <input type="checkbox" class="discount-checkbox" id="discount-checkbox" name="discount-checkbox" hidden>
+                    <label for="discount-checkbox"><p class="discount-dropdown-select">Special Codes or Rates<i class="fas fa-caret-down"></i></p></label>
+                    <div class="discount-code-input-section">
+                        <label for="discount" class="discount-code-label"></label>
+                        <input type="text" name="discount" class="discount-code-input" placeholder="Enter code">
+                        <button class="discount-cancel-btn cancel-btn">Cancel</button>
+                        <button class="discount-apply-btn apply-btn">Apply</button>
+                    </div>
+                </div>
+            </div>
+                <div class="calendar-container">
+                    <div class="month1-container">
+                        <div class="nav-btn-wrapper"><i class="fas fa-chevron-left month-nav-btn left"></i></div>
+                        <div class="month1-name"> Month1</div>
+                        <div class="days-container">
+                            <p class="day-name">Mo</p>
+                            <p class="day-name">Tu</p>
+                            <p class="day-name">We</p>
+                            <p class="day-name">Th</p>
+                            <p class="day-name">Fr</p>
+                            <p class="day-name">Sa</p>
+                            <p class="day-name">Su</p>
+                        </div>
+                        <div class="calendar-dates-container month1-date-container">
+                            <div class="calendar-date calendar-date-month1"></div>
+                            <div class="calendar-date calendar-date-month1"></div>
+                            <div class="calendar-date calendar-date-month1"></div>
+                            <div class="calendar-date calendar-date-month1"></div>
+                            <div class="calendar-date calendar-date-month1"></div>
+                            <div class="calendar-date calendar-date-month1"></div>
+                            <div class="calendar-date calendar-date-month1"></div>
+                            <div class="calendar-date calendar-date-month1"></div>
+                            <div class="calendar-date calendar-date-month1"></div>
+                            <div class="calendar-date calendar-date-month1"></div>
+                            <div class="calendar-date calendar-date-month1"></div>
+                            <div class="calendar-date calendar-date-month1"></div>
+                            <div class="calendar-date calendar-date-month1"></div>
+                            <div class="calendar-date calendar-date-month1"></div>
+                            <div class="calendar-date calendar-date-month1"></div>
+                            <div class="calendar-date calendar-date-month1"></div>
+                            <div class="calendar-date calendar-date-month1"></div>
+                            <div class="calendar-date calendar-date-month1"></div>
+                            <div class="calendar-date calendar-date-month1"></div>
+                            <div class="calendar-date calendar-date-month1"></div>
+                            <div class="calendar-date calendar-date-month1"></div>
+                            <div class="calendar-date calendar-date-month1"></div>
+                            <div class="calendar-date calendar-date-month1"></div>
+                            <div class="calendar-date calendar-date-month1"></div>
+                            <div class="calendar-date calendar-date-month1"></div>
+                            <div class="calendar-date calendar-date-month1"></div>
+                            <div class="calendar-date calendar-date-month1"></div>
+                            <div class="calendar-date calendar-date-month1"></div>
+                            <div class="calendar-date calendar-date-month1"></div>
+                            <div class="calendar-date calendar-date-month1"></div>
+                            <div class="calendar-date calendar-date-month1"></div>
+                            <div class="calendar-date calendar-date-month1"></div>
+                            <div class="calendar-date calendar-date-month1"></div>
+                            <div class="calendar-date calendar-date-month1"></div>
+                            <div class="calendar-date calendar-date-month1"></div>
+                            <div class="calendar-date calendar-date-month1"></div>
+                            <div class="calendar-date calendar-date-month1"></div>
+                            <div class="calendar-date calendar-date-month1"></div>
+                            <div class="calendar-date calendar-date-month1"></div>
+                            <div class="calendar-date calendar-date-month1"></div>
+                            <div class="calendar-date calendar-date-month1"></div>
+                            <div class="calendar-date calendar-date-month1"></div>
+                        </div>
+                    </div>
+                    <div class="month2-container"><div class="nav-btn-wrapper"><i class="fas fa-chevron-right month-nav-btn right"></i></div>
+                        <div class="month2-name">Month2</div>
+                        <div class="days-container">
+                            <p class="day-name">Mo</p>
+                            <p class="day-name">Tu</p>
+                            <p class="day-name">We</p>
+                            <p class="day-name">Th</p>
+                            <p class="day-name">Fr</p>
+                            <p class="day-name">Sa</p>
+                            <p class="day-name">Su</p>
+                        </div>
+                        <div class="calendar-dates-container month2-date-container">
+                            <div class="calendar-date calendar-date-month2"></div>
+                            <div class="calendar-date calendar-date-month2"></div>
+                            <div class="calendar-date calendar-date-month2"></div>
+                            <div class="calendar-date calendar-date-month2"></div>
+                            <div class="calendar-date calendar-date-month2"></div>
+                            <div class="calendar-date calendar-date-month2"></div>
+                            <div class="calendar-date calendar-date-month2"></div>
+                            <div class="calendar-date calendar-date-month2"></div>
+                            <div class="calendar-date calendar-date-month2"></div>
+                            <div class="calendar-date calendar-date-month2"></div>
+                            <div class="calendar-date calendar-date-month2"></div>
+                            <div class="calendar-date calendar-date-month2"></div>
+                            <div class="calendar-date calendar-date-month2"></div>
+                            <div class="calendar-date calendar-date-month2"></div>
+                            <div class="calendar-date calendar-date-month2"></div>
+                            <div class="calendar-date calendar-date-month2"></div>
+                            <div class="calendar-date calendar-date-month2"></div>
+                            <div class="calendar-date calendar-date-month2"></div>
+                            <div class="calendar-date calendar-date-month2"></div>
+                            <div class="calendar-date calendar-date-month2"></div>
+                            <div class="calendar-date calendar-date-month2"></div>
+                            <div class="calendar-date calendar-date-month2"></div>
+                            <div class="calendar-date calendar-date-month2"></div>
+                            <div class="calendar-date calendar-date-month2"></div>
+                            <div class="calendar-date calendar-date-month2"></div>
+                            <div class="calendar-date calendar-date-month2"></div>
+                            <div class="calendar-date calendar-date-month2"></div>
+                            <div class="calendar-date calendar-date-month2"></div>
+                            <div class="calendar-date calendar-date-month2"></div>
+                            <div class="calendar-date calendar-date-month2"></div>
+                            <div class="calendar-date calendar-date-month2"></div>
+                            <div class="calendar-date calendar-date-month2"></div>
+                            <div class="calendar-date calendar-date-month2"></div>
+                            <div class="calendar-date calendar-date-month2"></div>
+                            <div class="calendar-date calendar-date-month2"></div>
+                            <div class="calendar-date calendar-date-month2"></div>
+                            <div class="calendar-date calendar-date-month2"></div>
+                            <div class="calendar-date calendar-date-month2"></div>
+                            <div class="calendar-date calendar-date-month2"></div>
+                            <div class="calendar-date calendar-date-month2"></div>
+                            <div class="calendar-date calendar-date-month2"></div>
+                            <div class="calendar-date calendar-date-month2"></div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="date-select-search-btn-wrapper">
+                <button class="date-select-search-btn" disabled>Search</button>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- footer -->
+
+    <footer class="footer">
+      <div class="main-part">
+        <div class="footer-list-wrapper">
+          <h3 class="footer-heading">L'Hôtel du Luxe</h3>
+          <ul class="footer-list">
+            <li class="footer-list-item"><a href="#" class="footer-list-link">support@lhotelduluxe.com</a></li>
+            <li class="footer-list-item"><a href="#" class="footer-list-link">101 Avenue Montaigne, Paris, France</a></li>
+            <li class="footer-list-item"><a href="#" class="footer-list-link">téléphone: +33 123 456 7890</a></li>
+          </ul>
+        </div>
+        <div class="footer-list-wrapper">
+          <h3 class="footer-heading">Explore</h3>
+          <ul class="footer-list">
+            <li class="footer-list-item"><a href="#" class="footer-list-link">Home</a></li>
+            <li class="footer-list-item"><a href="#" class="footer-list-link">About Us</a></li>
+            <li class="footer-list-item"><a href="#" class="footer-list-link">Suites</a></li>
+            <li class="footer-list-item"><a href="#" class="footer-list-link">Events</a></li>
+            <li class="footer-list-item"><a href="#" class="footer-list-link">Customers</a></li>
+            <li class="footer-list-item"><a href="#" class="footer-list-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="contact">
+          <h3 class="footer-heading">Contact</h3>
+          <p>Sign up for news</p>
+          <form class="footer-form">
+            <input type="text" class="footer-input" placeholder="Your email...">
+            <button class="footer-btn">Sign Up</button>
+          </form>
+        </div>
+
+        <div class="gallery">
+          <h3 class="footer-heading">Gallery</h3>
+          <div class="gallery-images">
+            <div class="gallery-image-wrapper">
+              <img src="img/restaurant.jfif" class="footer-image">
+            </div>
+            <div class="gallery-image-wrapper">
+              <img src="img/room5.jfif" class="footer-image">
+            </div>
+            <div class="gallery-image-wrapper">
+              <img src="img/waiter.jfif" class="footer-image">
+            </div>
+            <div class="gallery-image-wrapper">
+              <img src="img/gardens.jfif" class="footer-image">
+            </div>
+            <div class="gallery-image-wrapper">
+              <img src="img/restaurant1.jfif" class="footer-image">
+            </div>
+            <div class="gallery-image-wrapper">
+              <img src="img/hallway.jfif" class="footer-image">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="creator-part">
+        <div class="copyright-text">
+          <p>Copyright &copy; 2021. L'Hôtel du Luxe. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- end of footer -->
+    <script src="suites.js"></script>
+  </body>
+</html>
