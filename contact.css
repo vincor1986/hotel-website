@@ -900,6 +900,67 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  .sidebar {
+    height: 8rem;
+    width: 100vw;
+    z-index: 50;
+  }
+
+  .sidebar {
+    align-items: flex-end;
+  }
+
+  .menu-icon {
+    position: relative;
+    left: -3.5rem;
+  }
+
+  .social-icons-list {
+    display: none;
+  }
+
+  .year {
+    display: none;
+  }
+
+  .checkbox:checked ~ .navigation {
+    left: 0rem;
+  }
+
+  .navigation {
+    left: -40rem;
+    z-index: 200;
+  }
+
+  .header-container {
+    margin-left: 0rem;
+    width: 100vw;
+  }
+
+  .header-opacity-helper-2 {
+    margin-left: 0rem;
+  }
+
+  .contact-main-container {
+    margin-left: 0rem;
+    width: 100vw;
+  }
+
+  .contact-form-main-container {
+    margin-left: 0rem;
+    width: 100vw;
+  }
+
+  .find-us-main-container {
+    margin-left: 0rem;
+    width: 100vw;
+  }
+
+  .footer {
+    margin-left: 0rem;
+    width: 100vw;
+  }
+
   .header-content-wrapper {
     padding: 0rem;
     align-items: center;
@@ -977,6 +1038,10 @@ body {
     height: 4rem;
   }
 
+  .section-container {
+    padding-bottom: 0.5rem;
+  }
+
   .section-container-content {
     margin: 1.5rem 0rem;
     align-self: stretch;
@@ -1017,6 +1082,10 @@ body {
 
   .body-4 {
     padding: 0rem 2rem;
+  }
+
+  .navigation {
+    width: 85%;
   }
 }
 
@@ -1073,11 +1142,12 @@ body {
 
 @media (max-width: 350px) {
   .navigation {
-    width: 70%;
+    width: 80%;
   }
 
   .navigation-search-input {
-    width: 60%;
+    box-sizing: border-box;
+    width: 75%;
     margin-left: 1rem;
   }
 

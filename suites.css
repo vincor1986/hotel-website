@@ -760,6 +760,11 @@ body {
     margin: 3rem 0rem;
     max-width: 70rem;
   }
+
+  .date-select-container {
+    margin-left: 5rem;
+    margin-right: 7rem;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -793,7 +798,7 @@ body {
   }
 
   .date-select-container {
-    padding: 3rem 2rem 3rem 1rem;
+    padding: 3rem 1rem 3rem 1rem;
   }
 
   .info-section-heading {
@@ -833,6 +838,57 @@ body {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .sidebar {
+    height: 8rem;
+    width: 100vw;
+    z-index: 50;
+  }
+
+  .sidebar {
+    align-items: flex-end;
+  }
+
+  .menu-icon {
+    position: relative;
+    left: -3.5rem;
+  }
+
+  .social-icons-list {
+    display: none;
+  }
+
+  .year {
+    display: none;
+  }
+
+  .checkbox:checked ~ .navigation {
+    left: 0rem;
+  }
+
+  .navigation {
+    left: -40rem;
+    z-index: 200;
+  }
+
+  .page-container {
+    margin-left: 0rem;
+    margin-top: 8rem;
+    width: 100vw;
+    display: flex;
+  }
+
+  .date-select-container {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    max-width: 82.5%;
+  }
+
+  .footer {
+    margin-left: 0rem;
+  }
+}
+
 @media screen and (max-width: 450px) {
   .date-select-heading {
     font-size: 1.9rem;
@@ -841,19 +897,38 @@ body {
   .info-details {
     font-size: 1.5rem;
   }
+
+  .navigation {
+    width: 85%;
+  }
 }
 
 @media (max-width: 350px) {
   .navigation {
-    width: 70%;
+    width: 80%;
   }
 
   .navigation-search-input {
-    width: 60%;
+    box-sizing: border-box;
+    width: 75%;
     margin-left: 1rem;
+  }
+
+  .date-select-container {
+    margin-left: 1.5rem;
   }
 
   .copyright {
     font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .calendar-dates-container {
+    grid-template-rows: repeat(6, 3rem);
+  }
+
+  .calendar-date {
+    font-size: 1.4rem;
   }
 }

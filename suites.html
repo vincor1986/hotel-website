@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="img/logo/logo_large.png"
-    />
+    <link rel="shortcut icon" href="img/logo/logo_large.png" />
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -30,7 +27,18 @@
     <title>Book Now - L'Hôtel du Luxe</title>
   </head>
   <body>
-    <div id="loadOverlay" style="background-color:#333; position:absolute; top:0px; left:0px; width:100%; height:100%; z-index:2000;"></div>
+    <div
+      id="loadOverlay"
+      style="
+        background-color: #333;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 2000;
+      "
+    ></div>
     <!-- navbar -->
     <div class="navbar">
       <input type="checkbox" class="checkbox" id="click" hidden />
@@ -81,20 +89,26 @@
         </div>
 
         <ul class="navigation-list">
-          <li id="a"  class="navigation-item">
+          <li id="a" class="navigation-item">
             <a href="/hotel-website" class="navigation-link">home</a>
           </li>
           <li id="b" class="navigation-item">
-            <a href="/hotel-website/about-us.html" class="navigation-link">about us</a>
+            <a href="/hotel-website/about-us.html" class="navigation-link"
+              >about us</a
+            >
           </li>
           <li id="c" class="navigation-item">
             <a href="#" class="navigation-link">reservations</a>
           </li>
           <li id="d" class="navigation-item">
-            <a href="/hotel-website/events.html" class="navigation-link">events</a>
+            <a href="/hotel-website/events.html" class="navigation-link"
+              >events</a
+            >
           </li>
           <li id="f" class="navigation-item">
-            <a href="/hotel-website/contact.html" class="navigation-link">contact</a>
+            <a href="/hotel-website/contact.html" class="navigation-link"
+              >contact</a
+            >
           </li>
         </ul>
 
@@ -107,186 +121,229 @@
     <!-- end of navbar -->
 
     <div class="page-container">
-        <div class="date-select-container">
-            <div class="date-select-heading">Select your dates...</div>
-            <div class="info-section-container">
-                <div class="guest-info-wrapper info-section-heading">
-                    <i class="fas fa-user-friends info-section-icon"></i>
-                    <div class="guest-info">
-                        <div class="guest-info-title info-title"><label for="guest-select-dropdown-checkbox">Guests <i class="fas fa-caret-down"></i></label></div>
-                        <div class="guest-info-details info-details">2 Adults, 0 Children</div>
-                    </div>
-                </div>
-                <div class="check-in-wrapper info-section-heading">
-                    <i class="fas fa-calendar-alt info-section-icon"></i>
-                    <div class="check-in-info">
-                        <div class="check-in-title info-title">Check-in</div>
-                        <div class="check-in-details info-details">Please select...</div>
-                    </div>
-                </div>
-                <div class="check-out-wrapper info-section-heading">
-                    <i class="fas fa-calendar-alt info-section-icon"></i>
-                    <div class="check-out-info">
-                        <div class="check-out-title info-title">Check-out</div>
-                        <div class="check-out-details info-details">Please select...</div>
-                    </div>
-                </div>
+      <div class="date-select-container">
+        <div class="date-select-heading">Select your dates...</div>
+        <div class="info-section-container">
+          <div class="guest-info-wrapper info-section-heading">
+            <i class="fas fa-user-friends info-section-icon"></i>
+            <div class="guest-info">
+              <div class="guest-info-title info-title">
+                <label for="guest-select-dropdown-checkbox"
+                  >Guests <i class="fas fa-caret-down"></i
+                ></label>
+              </div>
+              <div class="guest-info-details info-details">
+                2 Adults, 0 Children
+              </div>
             </div>
-            <div class="row2-container">
-                <input type="checkbox" class="guest-select-dropdown-checkbox"id="guest-select-dropdown-checkbox" name="guest-select-dropdown-checkbox" hidden>
-                <div class="guest-select-dropdown">
-                    <div class="guest-select-heading"><i class="fas fa-times guest-select-close"></i><p class="">Select Guests</p></div>
-                    <div class="guest-select-input-section">
-                    <div class="guest-select-adult-section">
-                        <p class="guest-select-info-title">Adults</p>
-                        <div class="guest-select-control a-minus"><p>-</p></div>
-                        <input type="text" class="guest-select-input-display adult-count" value="2">
-                        <div class="guest-select-control a-plus"><p>+</p></div>
-                    </div>
-                    <div class="guest-select-children-section">
-                        <p class="guest-select-info-title">Children</p>
-                        <div class="guest-select-control c-minus"><p>-</p></div>
-                        <input type="text" class="guest-select-input-display child-count" value="0">
-                        <div class="guest-select-control c-plus"><p>+</p></div>
-                    </div></div>
-                    <div class="guest-select-btn-section">
-                    <button class="guest-select-cancel-btn cancel-btn">Cancel</button>
-                    <button class="guest-select-apply-btn apply-btn">Apply</button></div>
-                </div>
-                <div class="discount-box">
-                    <input type="checkbox" class="discount-checkbox" id="discount-checkbox" name="discount-checkbox" hidden>
-                    <label for="discount-checkbox"><p class="discount-dropdown-select">Special Codes or Rates<i class="fas fa-caret-down"></i></p></label>
-                    <div class="discount-code-input-section">
-                        <label for="discount" class="discount-code-label"></label>
-                        <input type="text" name="discount" class="discount-code-input" placeholder="Enter code">
-                        <button class="discount-cancel-btn cancel-btn">Cancel</button>
-                        <button class="discount-apply-btn apply-btn">Apply</button>
-                    </div>
-                </div>
+          </div>
+          <div class="check-in-wrapper info-section-heading">
+            <i class="fas fa-calendar-alt info-section-icon"></i>
+            <div class="check-in-info">
+              <div class="check-in-title info-title">Check-in</div>
+              <div class="check-in-details info-details">Please select...</div>
             </div>
-                <div class="calendar-container">
-                    <div class="month1-container">
-                        <div class="nav-btn-wrapper"><i class="fas fa-chevron-left month-nav-btn left"></i></div>
-                        <div class="month1-name"> Month1</div>
-                        <div class="days-container">
-                            <p class="day-name">Mo</p>
-                            <p class="day-name">Tu</p>
-                            <p class="day-name">We</p>
-                            <p class="day-name">Th</p>
-                            <p class="day-name">Fr</p>
-                            <p class="day-name">Sa</p>
-                            <p class="day-name">Su</p>
-                        </div>
-                        <div class="calendar-dates-container month1-date-container">
-                            <div class="calendar-date calendar-date-month1"></div>
-                            <div class="calendar-date calendar-date-month1"></div>
-                            <div class="calendar-date calendar-date-month1"></div>
-                            <div class="calendar-date calendar-date-month1"></div>
-                            <div class="calendar-date calendar-date-month1"></div>
-                            <div class="calendar-date calendar-date-month1"></div>
-                            <div class="calendar-date calendar-date-month1"></div>
-                            <div class="calendar-date calendar-date-month1"></div>
-                            <div class="calendar-date calendar-date-month1"></div>
-                            <div class="calendar-date calendar-date-month1"></div>
-                            <div class="calendar-date calendar-date-month1"></div>
-                            <div class="calendar-date calendar-date-month1"></div>
-                            <div class="calendar-date calendar-date-month1"></div>
-                            <div class="calendar-date calendar-date-month1"></div>
-                            <div class="calendar-date calendar-date-month1"></div>
-                            <div class="calendar-date calendar-date-month1"></div>
-                            <div class="calendar-date calendar-date-month1"></div>
-                            <div class="calendar-date calendar-date-month1"></div>
-                            <div class="calendar-date calendar-date-month1"></div>
-                            <div class="calendar-date calendar-date-month1"></div>
-                            <div class="calendar-date calendar-date-month1"></div>
-                            <div class="calendar-date calendar-date-month1"></div>
-                            <div class="calendar-date calendar-date-month1"></div>
-                            <div class="calendar-date calendar-date-month1"></div>
-                            <div class="calendar-date calendar-date-month1"></div>
-                            <div class="calendar-date calendar-date-month1"></div>
-                            <div class="calendar-date calendar-date-month1"></div>
-                            <div class="calendar-date calendar-date-month1"></div>
-                            <div class="calendar-date calendar-date-month1"></div>
-                            <div class="calendar-date calendar-date-month1"></div>
-                            <div class="calendar-date calendar-date-month1"></div>
-                            <div class="calendar-date calendar-date-month1"></div>
-                            <div class="calendar-date calendar-date-month1"></div>
-                            <div class="calendar-date calendar-date-month1"></div>
-                            <div class="calendar-date calendar-date-month1"></div>
-                            <div class="calendar-date calendar-date-month1"></div>
-                            <div class="calendar-date calendar-date-month1"></div>
-                            <div class="calendar-date calendar-date-month1"></div>
-                            <div class="calendar-date calendar-date-month1"></div>
-                            <div class="calendar-date calendar-date-month1"></div>
-                            <div class="calendar-date calendar-date-month1"></div>
-                            <div class="calendar-date calendar-date-month1"></div>
-                        </div>
-                    </div>
-                    <div class="month2-container"><div class="nav-btn-wrapper"><i class="fas fa-chevron-right month-nav-btn right"></i></div>
-                        <div class="month2-name">Month2</div>
-                        <div class="days-container">
-                            <p class="day-name">Mo</p>
-                            <p class="day-name">Tu</p>
-                            <p class="day-name">We</p>
-                            <p class="day-name">Th</p>
-                            <p class="day-name">Fr</p>
-                            <p class="day-name">Sa</p>
-                            <p class="day-name">Su</p>
-                        </div>
-                        <div class="calendar-dates-container month2-date-container">
-                            <div class="calendar-date calendar-date-month2"></div>
-                            <div class="calendar-date calendar-date-month2"></div>
-                            <div class="calendar-date calendar-date-month2"></div>
-                            <div class="calendar-date calendar-date-month2"></div>
-                            <div class="calendar-date calendar-date-month2"></div>
-                            <div class="calendar-date calendar-date-month2"></div>
-                            <div class="calendar-date calendar-date-month2"></div>
-                            <div class="calendar-date calendar-date-month2"></div>
-                            <div class="calendar-date calendar-date-month2"></div>
-                            <div class="calendar-date calendar-date-month2"></div>
-                            <div class="calendar-date calendar-date-month2"></div>
-                            <div class="calendar-date calendar-date-month2"></div>
-                            <div class="calendar-date calendar-date-month2"></div>
-                            <div class="calendar-date calendar-date-month2"></div>
-                            <div class="calendar-date calendar-date-month2"></div>
-                            <div class="calendar-date calendar-date-month2"></div>
-                            <div class="calendar-date calendar-date-month2"></div>
-                            <div class="calendar-date calendar-date-month2"></div>
-                            <div class="calendar-date calendar-date-month2"></div>
-                            <div class="calendar-date calendar-date-month2"></div>
-                            <div class="calendar-date calendar-date-month2"></div>
-                            <div class="calendar-date calendar-date-month2"></div>
-                            <div class="calendar-date calendar-date-month2"></div>
-                            <div class="calendar-date calendar-date-month2"></div>
-                            <div class="calendar-date calendar-date-month2"></div>
-                            <div class="calendar-date calendar-date-month2"></div>
-                            <div class="calendar-date calendar-date-month2"></div>
-                            <div class="calendar-date calendar-date-month2"></div>
-                            <div class="calendar-date calendar-date-month2"></div>
-                            <div class="calendar-date calendar-date-month2"></div>
-                            <div class="calendar-date calendar-date-month2"></div>
-                            <div class="calendar-date calendar-date-month2"></div>
-                            <div class="calendar-date calendar-date-month2"></div>
-                            <div class="calendar-date calendar-date-month2"></div>
-                            <div class="calendar-date calendar-date-month2"></div>
-                            <div class="calendar-date calendar-date-month2"></div>
-                            <div class="calendar-date calendar-date-month2"></div>
-                            <div class="calendar-date calendar-date-month2"></div>
-                            <div class="calendar-date calendar-date-month2"></div>
-                            <div class="calendar-date calendar-date-month2"></div>
-                            <div class="calendar-date calendar-date-month2"></div>
-                            <div class="calendar-date calendar-date-month2"></div>
-                        </div>
-                    </div>
-                </div>
-
-            <div class="date-select-search-btn-wrapper">
-                <button class="date-select-search-btn" disabled>Search</button>
+          </div>
+          <div class="check-out-wrapper info-section-heading">
+            <i class="fas fa-calendar-alt info-section-icon"></i>
+            <div class="check-out-info">
+              <div class="check-out-title info-title">Check-out</div>
+              <div class="check-out-details info-details">Please select...</div>
             </div>
+          </div>
         </div>
+        <div class="row2-container">
+          <input
+            type="checkbox"
+            class="guest-select-dropdown-checkbox"
+            id="guest-select-dropdown-checkbox"
+            name="guest-select-dropdown-checkbox"
+            hidden
+          />
+          <div class="guest-select-dropdown">
+            <div class="guest-select-heading">
+              <i class="fas fa-times guest-select-close"></i>
+              <p class="">Select Guests</p>
+            </div>
+            <div class="guest-select-input-section">
+              <div class="guest-select-adult-section">
+                <p class="guest-select-info-title">Adults</p>
+                <div class="guest-select-control a-minus"><p>-</p></div>
+                <input
+                  type="text"
+                  class="guest-select-input-display adult-count"
+                  value="2"
+                />
+                <div class="guest-select-control a-plus"><p>+</p></div>
+              </div>
+              <div class="guest-select-children-section">
+                <p class="guest-select-info-title">Children</p>
+                <div class="guest-select-control c-minus"><p>-</p></div>
+                <input
+                  type="text"
+                  class="guest-select-input-display child-count"
+                  value="0"
+                />
+                <div class="guest-select-control c-plus"><p>+</p></div>
+              </div>
+            </div>
+            <div class="guest-select-btn-section">
+              <button class="guest-select-cancel-btn cancel-btn">Cancel</button>
+              <button class="guest-select-apply-btn apply-btn">Apply</button>
+            </div>
+          </div>
+          <div class="discount-box">
+            <input
+              type="checkbox"
+              class="discount-checkbox"
+              id="discount-checkbox"
+              name="discount-checkbox"
+              hidden
+            />
+            <label for="discount-checkbox"
+              ><p class="discount-dropdown-select">
+                Special Codes or Rates<i class="fas fa-caret-down"></i></p
+            ></label>
+            <div class="discount-code-input-section">
+              <label for="discount" class="discount-code-label"></label>
+              <input
+                type="text"
+                name="discount"
+                class="discount-code-input"
+                placeholder="Enter code"
+              />
+              <button class="discount-cancel-btn cancel-btn">Cancel</button>
+              <button class="discount-apply-btn apply-btn">Apply</button>
+            </div>
+          </div>
+        </div>
+        <div class="calendar-container">
+          <div class="month1-container">
+            <div class="nav-btn-wrapper">
+              <i class="fas fa-chevron-left month-nav-btn left"></i>
+            </div>
+            <div class="month1-name">Month1</div>
+            <div class="days-container">
+              <p class="day-name">Mo</p>
+              <p class="day-name">Tu</p>
+              <p class="day-name">We</p>
+              <p class="day-name">Th</p>
+              <p class="day-name">Fr</p>
+              <p class="day-name">Sa</p>
+              <p class="day-name">Su</p>
+            </div>
+            <div class="calendar-dates-container month1-date-container">
+              <div class="calendar-date calendar-date-month1"></div>
+              <div class="calendar-date calendar-date-month1"></div>
+              <div class="calendar-date calendar-date-month1"></div>
+              <div class="calendar-date calendar-date-month1"></div>
+              <div class="calendar-date calendar-date-month1"></div>
+              <div class="calendar-date calendar-date-month1"></div>
+              <div class="calendar-date calendar-date-month1"></div>
+              <div class="calendar-date calendar-date-month1"></div>
+              <div class="calendar-date calendar-date-month1"></div>
+              <div class="calendar-date calendar-date-month1"></div>
+              <div class="calendar-date calendar-date-month1"></div>
+              <div class="calendar-date calendar-date-month1"></div>
+              <div class="calendar-date calendar-date-month1"></div>
+              <div class="calendar-date calendar-date-month1"></div>
+              <div class="calendar-date calendar-date-month1"></div>
+              <div class="calendar-date calendar-date-month1"></div>
+              <div class="calendar-date calendar-date-month1"></div>
+              <div class="calendar-date calendar-date-month1"></div>
+              <div class="calendar-date calendar-date-month1"></div>
+              <div class="calendar-date calendar-date-month1"></div>
+              <div class="calendar-date calendar-date-month1"></div>
+              <div class="calendar-date calendar-date-month1"></div>
+              <div class="calendar-date calendar-date-month1"></div>
+              <div class="calendar-date calendar-date-month1"></div>
+              <div class="calendar-date calendar-date-month1"></div>
+              <div class="calendar-date calendar-date-month1"></div>
+              <div class="calendar-date calendar-date-month1"></div>
+              <div class="calendar-date calendar-date-month1"></div>
+              <div class="calendar-date calendar-date-month1"></div>
+              <div class="calendar-date calendar-date-month1"></div>
+              <div class="calendar-date calendar-date-month1"></div>
+              <div class="calendar-date calendar-date-month1"></div>
+              <div class="calendar-date calendar-date-month1"></div>
+              <div class="calendar-date calendar-date-month1"></div>
+              <div class="calendar-date calendar-date-month1"></div>
+              <div class="calendar-date calendar-date-month1"></div>
+              <div class="calendar-date calendar-date-month1"></div>
+              <div class="calendar-date calendar-date-month1"></div>
+              <div class="calendar-date calendar-date-month1"></div>
+              <div class="calendar-date calendar-date-month1"></div>
+              <div class="calendar-date calendar-date-month1"></div>
+              <div class="calendar-date calendar-date-month1"></div>
+            </div>
+          </div>
+          <div class="month2-container">
+            <div class="nav-btn-wrapper">
+              <i class="fas fa-chevron-right month-nav-btn right"></i>
+            </div>
+            <div class="month2-name">Month2</div>
+            <div class="days-container">
+              <p class="day-name">Mo</p>
+              <p class="day-name">Tu</p>
+              <p class="day-name">We</p>
+              <p class="day-name">Th</p>
+              <p class="day-name">Fr</p>
+              <p class="day-name">Sa</p>
+              <p class="day-name">Su</p>
+            </div>
+            <div class="calendar-dates-container month2-date-container">
+              <div class="calendar-date calendar-date-month2"></div>
+              <div class="calendar-date calendar-date-month2"></div>
+              <div class="calendar-date calendar-date-month2"></div>
+              <div class="calendar-date calendar-date-month2"></div>
+              <div class="calendar-date calendar-date-month2"></div>
+              <div class="calendar-date calendar-date-month2"></div>
+              <div class="calendar-date calendar-date-month2"></div>
+              <div class="calendar-date calendar-date-month2"></div>
+              <div class="calendar-date calendar-date-month2"></div>
+              <div class="calendar-date calendar-date-month2"></div>
+              <div class="calendar-date calendar-date-month2"></div>
+              <div class="calendar-date calendar-date-month2"></div>
+              <div class="calendar-date calendar-date-month2"></div>
+              <div class="calendar-date calendar-date-month2"></div>
+              <div class="calendar-date calendar-date-month2"></div>
+              <div class="calendar-date calendar-date-month2"></div>
+              <div class="calendar-date calendar-date-month2"></div>
+              <div class="calendar-date calendar-date-month2"></div>
+              <div class="calendar-date calendar-date-month2"></div>
+              <div class="calendar-date calendar-date-month2"></div>
+              <div class="calendar-date calendar-date-month2"></div>
+              <div class="calendar-date calendar-date-month2"></div>
+              <div class="calendar-date calendar-date-month2"></div>
+              <div class="calendar-date calendar-date-month2"></div>
+              <div class="calendar-date calendar-date-month2"></div>
+              <div class="calendar-date calendar-date-month2"></div>
+              <div class="calendar-date calendar-date-month2"></div>
+              <div class="calendar-date calendar-date-month2"></div>
+              <div class="calendar-date calendar-date-month2"></div>
+              <div class="calendar-date calendar-date-month2"></div>
+              <div class="calendar-date calendar-date-month2"></div>
+              <div class="calendar-date calendar-date-month2"></div>
+              <div class="calendar-date calendar-date-month2"></div>
+              <div class="calendar-date calendar-date-month2"></div>
+              <div class="calendar-date calendar-date-month2"></div>
+              <div class="calendar-date calendar-date-month2"></div>
+              <div class="calendar-date calendar-date-month2"></div>
+              <div class="calendar-date calendar-date-month2"></div>
+              <div class="calendar-date calendar-date-month2"></div>
+              <div class="calendar-date calendar-date-month2"></div>
+              <div class="calendar-date calendar-date-month2"></div>
+              <div class="calendar-date calendar-date-month2"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="date-select-search-btn-wrapper">
+          <button class="date-select-search-btn" disabled>Search</button>
+        </div>
+      </div>
     </div>
 
-    
     <!-- footer -->
 
     <footer class="footer">
@@ -294,19 +351,45 @@
         <div class="footer-list-wrapper">
           <h3 class="footer-heading">L'Hôtel du Luxe</h3>
           <ul class="footer-list">
-            <li class="footer-list-item"><a href="#" class="footer-list-link">support@lhotelduluxe.com</a></li>
-            <li class="footer-list-item"><a href="#" class="footer-list-link">101 Avenue Montaigne, Paris, France</a></li>
-            <li class="footer-list-item"><a href="#" class="footer-list-link">téléphone: +33 123 456 7890</a></li>
+            <li class="footer-list-item">
+              <a href="#" class="footer-list-link">support@lhotelduluxe.com</a>
+            </li>
+            <li class="footer-list-item">
+              <a href="#" class="footer-list-link"
+                >101 Avenue Montaigne, Paris, France</a
+              >
+            </li>
+            <li class="footer-list-item">
+              <a href="#" class="footer-list-link"
+                >téléphone: +33 123 456 7890</a
+              >
+            </li>
           </ul>
         </div>
         <div class="footer-list-wrapper">
           <h3 class="footer-heading">Explore</h3>
           <ul class="footer-list">
-            <li class="footer-list-item"><a href="/hotel-website" class="footer-list-link">Home</a></li>
-            <li class="footer-list-item"><a href="/hotel-website/about-us.html" class="footer-list-link">About Us</a></li>
-            <li class="footer-list-item"><a href="#" class="footer-list-link">Reservations</a></li>
-            <li class="footer-list-item"><a href="/hotel-website/events.html" class="footer-list-link">Events</a></li>
-            <li class="footer-list-item"><a href="/hotel-website/contact.html" class="footer-list-link">Contact</a></li>
+            <li class="footer-list-item">
+              <a href="/hotel-website" class="footer-list-link">Home</a>
+            </li>
+            <li class="footer-list-item">
+              <a href="/hotel-website/about-us.html" class="footer-list-link"
+                >About Us</a
+              >
+            </li>
+            <li class="footer-list-item">
+              <a href="#" class="footer-list-link">Reservations</a>
+            </li>
+            <li class="footer-list-item">
+              <a href="/hotel-website/events.html" class="footer-list-link"
+                >Events</a
+              >
+            </li>
+            <li class="footer-list-item">
+              <a href="/hotel-website/contact.html" class="footer-list-link"
+                >Contact</a
+              >
+            </li>
           </ul>
         </div>
 
@@ -314,7 +397,11 @@
           <h3 class="footer-heading">Contact</h3>
           <p>Sign up for news</p>
           <form class="footer-form">
-            <input type="text" class="footer-input" placeholder="Your email...">
+            <input
+              type="text"
+              class="footer-input"
+              placeholder="Your email..."
+            />
             <button class="footer-btn">Sign Up</button>
           </form>
         </div>
@@ -323,22 +410,22 @@
           <h3 class="footer-heading">Gallery</h3>
           <div class="gallery-images">
             <div class="gallery-image-wrapper">
-              <img src="img/restaurant.jfif" class="footer-image">
+              <img src="img/restaurant.jfif" class="footer-image" />
             </div>
             <div class="gallery-image-wrapper">
-              <img src="img/room5.jfif" class="footer-image">
+              <img src="img/room5.jfif" class="footer-image" />
             </div>
             <div class="gallery-image-wrapper">
-              <img src="img/waiter.jfif" class="footer-image">
+              <img src="img/waiter.jfif" class="footer-image" />
             </div>
             <div class="gallery-image-wrapper">
-              <img src="img/gardens.jfif" class="footer-image">
+              <img src="img/gardens.jfif" class="footer-image" />
             </div>
             <div class="gallery-image-wrapper">
-              <img src="img/restaurant1.jfif" class="footer-image">
+              <img src="img/restaurant1.jfif" class="footer-image" />
             </div>
             <div class="gallery-image-wrapper">
-              <img src="img/hallway.jfif" class="footer-image">
+              <img src="img/hallway.jfif" class="footer-image" />
             </div>
           </div>
         </div>
