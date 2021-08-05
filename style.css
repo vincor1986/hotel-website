@@ -897,7 +897,7 @@ body {
 
 @media screen and (max-width: 600px) {
   .sidebar {
-    height: 8rem;
+    height: 4.5rem;
     width: 100vw;
     z-index: 50;
   }
@@ -908,6 +908,7 @@ body {
 
   .menu-icon {
     position: relative;
+    margin-top: 1.3rem;
     left: -3.5rem;
   }
 
@@ -930,8 +931,8 @@ body {
 
   .header {
     margin-left: 0;
-    margin-top: 8rem;
-    height: calc(100vh - 8rem);
+    margin-top: 4.5rem;
+    height: calc(100vh - 4.5rem);
   }
 
   .about-us {
@@ -965,7 +966,7 @@ body {
   .banner {
     margin-bottom: 60rem;
     padding-bottom: 20rem;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .banner-heading {
@@ -1045,6 +1046,12 @@ body {
 @media screen and (max-width: 450px) {
   .navigation {
     width: 85%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .navigation {
+    width: 80%;
   }
 }
 

@@ -802,7 +802,7 @@ option:active {
 
 @media screen and (max-width: 600px) {
   .sidebar {
-    height: 8rem;
+    height: 4.5rem;
     width: 100vw;
     z-index: 50;
   }
@@ -814,6 +814,7 @@ option:active {
   .menu-icon {
     position: relative;
     left: -3.5rem;
+    margin-top: 1.3rem;
   }
 
   .social-icons-list {
@@ -834,11 +835,11 @@ option:active {
 
   .header-container {
     margin-left: 0rem;
-    margin-top: 8rem;
+    margin-top: 4.5rem;
   }
 
   .header-background-img {
-    margin-top: 8rem;
+    margin-top: 4.5rem;
   }
 
   .about-us-info-container,
@@ -847,7 +848,7 @@ option:active {
   }
 
   .header-container {
-    height: calc(100vh - 8rem);
+    height: calc(100vh - 4.5rem);
   }
 
   .room-card {
@@ -894,6 +895,8 @@ option:active {
 
   .header-content {
     top: 0rem;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
   }
 
   .enclosed-logo {

@@ -901,7 +901,7 @@ body {
 
 @media screen and (max-width: 600px) {
   .sidebar {
-    height: 8rem;
+    height: 4.5rem;
     width: 100vw;
     z-index: 50;
   }
@@ -912,6 +912,7 @@ body {
 
   .menu-icon {
     position: relative;
+    margin-top: 1.3rem;
     left: -3.5rem;
   }
 
@@ -992,7 +993,7 @@ body {
   }
 
   .info-content-text {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -1136,7 +1137,11 @@ body {
 
 @media screen and (max-width: 375px) {
   .info-content-text {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
+  }
+
+  .navigation {
+    width: 80%;
   }
 }
 

@@ -840,7 +840,7 @@ body {
 
 @media screen and (max-width: 600px) {
   .sidebar {
-    height: 8rem;
+    height: 4.5rem;
     width: 100vw;
     z-index: 50;
   }
@@ -851,6 +851,7 @@ body {
 
   .menu-icon {
     position: relative;
+    margin-top: 1.3rem;
     left: -3.5rem;
   }
 
@@ -873,7 +874,7 @@ body {
 
   .page-container {
     margin-left: 0rem;
-    margin-top: 8rem;
+    margin-top: 4.5rem;
     width: 100vw;
     display: flex;
   }
@@ -900,6 +901,12 @@ body {
 
   .navigation {
     width: 85%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .navigation {
+    width: 80%;
   }
 }
 
