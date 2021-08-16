@@ -43,7 +43,7 @@ const a = document.querySelector(".header-background-img");
 
 let mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
 
-if (!mediaQuery || mediaQuery.matches) {
+if (mediaQuery && !mediaQuery.matches) {
   (function () {
     $(window)
       .unbind("scroll")
