@@ -41,10 +41,24 @@ const showContent = (el) => {
 
 const a = document.querySelector(".header-background-img");
 
-(function () {
-  $(window)
-    .unbind("scroll")
-    .scroll(function () {
-      a.style.top = `-${window.scrollY / 1.5}px`;
-    });
-})();
+let mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+if (!mediaQuery || mediaQuery.matches) {
+  (function () {
+    $(window)
+      .unbind("scroll")
+      .scroll(function () {
+        a.style.top = `-${window.scrollY / 1.5}px`;
+      });
+  })();
+}
+
+mediaQuery.addEventListener("change", () => {
+  (function () {
+    $(window)
+      .unbind("scroll")
+      .scroll(function () {
+        a.style.top = window.scrollY;
+      });
+  })();
+});
